@@ -1,1 +1,1 @@
-﻿alert('Password Protected')
+﻿alert('Would you like to add a password for this website?')

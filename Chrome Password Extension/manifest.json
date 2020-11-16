@@ -1,6 +1,10 @@
 ﻿{
-  "name": "password_protector",
+  "name": "Password Protector",
   "version": "1.0",
+  "description": "A password storage and autofill extension made by users, for users.",
+  "permissions": [
+    "storage"
+  ],
   "manifest_version": 2,
   "content_scripts": [
     {
@@ -9,10 +13,10 @@
     }
   ],
   "browser_action": {
+    "default_icon": "images/PWP.png",
     "default_popup": "popup.html",
     "default_title": "Chrome Password Protector"
   }
-
 }
 
  
