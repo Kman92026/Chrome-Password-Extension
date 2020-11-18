@@ -1,1 +1,1 @@
-﻿alert('Would you like to add a password for this website?')
+﻿alert("This is pretty annoying isn't it?")
