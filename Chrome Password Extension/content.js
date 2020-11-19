@@ -1,1 +1,1 @@
-﻿alert('Password Protected')
+﻿alert("This is pretty annoying isn't it?")
