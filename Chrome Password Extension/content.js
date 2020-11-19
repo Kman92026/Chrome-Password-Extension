@@ -1,1 +1,1 @@
-﻿alert("This is pretty annoying isn't it?")
+﻿
