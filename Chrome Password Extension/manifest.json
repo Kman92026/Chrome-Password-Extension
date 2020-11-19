@@ -8,10 +8,23 @@
       "js": [ "content.js" ]
     }
   ],
+
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Chrome Password Protector"
-  }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab",
+    "storage",
+    "<all_urls>"
+  ]
 
 }
 
