@@ -1,31 +1,29 @@
-﻿{
-  "name": "password_protector",
-  "version": "1.0",
+﻿// manifest.json
+{
+  "name": "Chrome Password Protector",
+  "description": "",
+  "version": "0.2.0",
   "manifest_version": 2,
-  "content_scripts": [
-    {
-      "matches": [ "<all_urls>" ],
-      "js": [ "content.js" ]
-    }
-  ],
-
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_title": "Chrome Password Protector"
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiArOsfU+g3LzINDjM8Zr9SLvCjawzzy8mDoWawqD5Klh7m0f8HDAmzh9/elVzh1o6pPSVgEa8zf4vX/eEY7vwb9CnTUNlK/x6p+oPlqt1BOQGg16fNRkrEIubYh15T1peILW1B+cCImbAwvu5QN5ZzJkp8S6VuvaCg7sHdwcyyDlIKfMWnYCiMR3iCrtI47NEvT2TCc6eCLVIusHcB4KyBkj2CyzI1AOpLNKTKpD88AXnZ4WnsBVcKjLB0he4t8EwsKS8jjSL0E8ybj2nOmmuEED+1Z6Uyg65tgUpQvLjcndZC2sZV0bTtG68Nl3RoS/G95m5j5qQNU6SnfyO0uFUwIDAQAB",
+  "icons": {
+    "16": "/images/PWP.png",
+    "32": "/images/PWP.png",
+    "48": "/images/PWP.png",
+    "128": "/images/PWP.png"
   },
-
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "./background.js",
+      "./jsrsasign-all-min.js"
+    ]
   },
-
+  //"options_page": "./options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "activeTab",
-    "storage",
-    "<all_urls>"
+    "identity"
   ]
-
 }
 
  
